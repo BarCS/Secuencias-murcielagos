@@ -1,0 +1,12 @@
+# Download five sequences and look for "TGCA" region
+# Barbara Cruz Salazar
+
+#Do directory
+mkdir Quiro
+cd Quiro
+
+#Download sequences
+curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nucleotide&rettype=fasta&id=MF803986.1,MF803988.1,MF803996.1,MF804038.1" > murcielagos.fasta
+
+#grep -c “TGCA” murcielagos.fasta
+
